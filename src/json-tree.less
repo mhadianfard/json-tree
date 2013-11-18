@@ -1,0 +1,48 @@
+.json-tree-wrapper
+{
+    overflow-x: scroll;
+
+    .json-tree
+    {
+        font-family: 'DejaVu Sans Mono','Courier New', monospace;
+        font-size: 12px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+
+        &, .jt-branch
+        {
+            display: table;
+            width: 100%;
+        }
+        .jt-node
+        {
+            .jt-key, .jt-value
+            {
+                display: table-cell;
+                .box-sizing(border-box);
+            }
+            .jt-key
+            {
+                min-width: 180px;
+                color: #204a87;
+            }
+            .jt-value
+            {
+                .jt-number      {color: #ad7fa8;}
+                .jt-string      {color: #4e9a06;}
+                .jt-null        {color: #babdb6;}
+                .jt-array-label {color: #FFB5B5;}
+                .jt-hash-label  {color: #BBB5FF;}
+            }
+            .jt-array-index,
+            .jt-array-length    {color: darkred;}
+        }
+    }
+}
+
+// Box sizing
+.box-sizing(@boxmodel) {
+    -webkit-box-sizing: @boxmodel;
+    -moz-box-sizing: @boxmodel;
+    box-sizing: @boxmodel;
+}

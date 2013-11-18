@@ -1,0 +1,44 @@
+.json-tree-wrapper {
+  overflow-x: scroll;
+}
+.json-tree-wrapper .json-tree {
+  font-family: 'DejaVu Sans Mono', 'Courier New', monospace;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.json-tree-wrapper .json-tree,
+.json-tree-wrapper .json-tree .jt-branch {
+  display: table;
+  width: 100%;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-key,
+.json-tree-wrapper .json-tree .jt-node .jt-value {
+  display: table-cell;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-key {
+  min-width: 180px;
+  color: #204a87;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-value .jt-number {
+  color: #ad7fa8;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-value .jt-string {
+  color: #4e9a06;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-value .jt-null {
+  color: #babdb6;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-value .jt-array-label {
+  color: #FFB5B5;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-value .jt-hash-label {
+  color: #BBB5FF;
+}
+.json-tree-wrapper .json-tree .jt-node .jt-array-index,
+.json-tree-wrapper .json-tree .jt-node .jt-array-length {
+  color: darkred;
+}
